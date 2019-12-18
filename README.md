@@ -1,0 +1,2 @@
+# FreebieCloudBudgetTemplate
+Freebie template 'CloudBudget'.
