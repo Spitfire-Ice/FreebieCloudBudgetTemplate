@@ -1,0 +1,145 @@
+header {
+ width: 100%;
+ min-height: 782px;
+ position: relative;
+ background: url("../img/header.png") no-repeat center;
+ background-size: cover;
+ .header--img-sub {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background: rgb(213,32,71);
+  background: linear-gradient(90deg, rgba(213,32,71,0.8) 0%, rgba(234,57,34,0.8) 100%); }
+}
+nav {
+ position: absolute;
+ top: 0;
+ z-index: 3;
+ width: 100%;
+ height: 100px;
+ background-color: rgba(255,255,255,0.2);
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+ font-family: $font--lato;
+ //text-transform: uppercase;
+ color: white;
+ .logo {
+  margin: auto 0;
+  cursor: pointer;
+  a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-transform: uppercase;
+  }
+ }
+ .menu {
+  display: flex;
+  flex-direction: row;
+  margin: auto 0;
+  li {
+   margin: 0 15px;
+   text-transform: uppercase;
+   transition: 0.5s;
+  }
+  li:hover {
+   font-weight: bold;
+   transition: 1s;
+   cursor: pointer;
+  }
+ }
+ .button-login {
+  width: 100px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 6px;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 17px;
+  margin: auto 0;
+ }
+ .menu__mobile-button {
+  cursor: pointer;
+  z-index: 5;
+  margin: auto 15px;
+  display: none;
+ }
+ .bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  opacity: 0.9;
+  margin: 6px auto;
+  transition: 0.4s;
+ }
+ .buttonChange .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+ }
+ .buttonChange .bar2 {
+  opacity: 0;
+ }
+ .buttonChange .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+ }
+}
+.header--content {
+min-height: 782px;
+ color: white;
+ position: relative;
+ z-index: 2;
+ font-family: $font--lato;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 86px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-align: center;
+ }
+ p {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  max-width: 540px;
+  width: 100%;
+  margin: 29px 0;
+ }
+ .header--button {
+  cursor: pointer;
+  font-family: $font--lato;
+  width: 160px;
+  height: 50px;
+  border-radius: 6px;
+  background-color: white;
+  color: $color--red-light;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+ }
+}
+
+@media screen and (max-width:850px) {
+ .menu {
+  display: none!important;
+ }
+ .button-login {
+  display: none!important;
+ }
+ .menu__mobile-button {
+  display: block!important;
+ }
+}

@@ -2,7 +2,14 @@
 @import "font";
 @import "variables+mixins";
 
+@import "header";
+@import "overview";
 
 
 
-
+html {
+ font-family: $font--lato;
+}
+footer {
+ background-color: olive;
+}
