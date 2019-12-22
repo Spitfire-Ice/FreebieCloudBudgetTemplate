@@ -3,3 +3,136 @@
  min-height: 545px;
  background: white;
 }
+.contact--items {
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+ flex-wrap: wrap;
+}
+.contact--item {
+ max-width: 540px;
+ width: 100%;
+ min-height: 332.5px;
+ margin: 127px 0 85px 0;
+ .item-content {
+  max-width: 455px;
+  height: 175px;
+  h3{
+   font-weight: 600;
+   font-size: 36px;
+   line-height: 43px;
+   color: #000000;
+   padding: 0 5px;
+  }
+  p {
+   font-size: 14px;
+   line-height: 20px;
+   text-align: justify;
+   color: #000000;
+   margin-top: 64px;
+   padding: 0 5px;
+
+  }
+ }
+}
+form {
+ width: 100%;
+ height: 100%;
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ input, select {
+  font-size: 16px;
+  line-height: 19px;
+  text-indent: 31px;
+  color: rgba(19, 39, 67, 0.5); }
+  margin: 15px 0;
+ input::placeholder {
+  color: rgba(19, 39, 67, 0.5);
+ }
+ input[name='firstName'],
+ input[name='lastName']{
+  width: 255px;
+  height: 65.4px;
+  border: 1px solid #333333;
+  box-sizing: border-box;
+  border-radius: 6px;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(19, 39, 67, 0.5);
+  margin: 15px 0;
+
+ }
+ input:nth-child(1) {
+  margin-right: 30px;
+ }
+ input[name='phone'] {
+  border: 1px solid #333333;
+  max-width: 540px;
+  width: 100%;
+  height: 65.4px;
+  border-radius: 6px;
+  margin: 15px 0;
+
+ }
+
+ select {
+  border: 1px solid #333333;
+  max-width: 540px;
+  width: 100%;
+  height: 65.4px;
+  margin: 15px 0;
+
+ }
+ button[type="submit"] {
+  width: 160px;
+  height: 54.5px;
+  background: #ED4C5C;
+  border: 1.5px solid #ED4C5C;
+  box-sizing: border-box;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin: 15px 0;
+
+ }
+}
+@media screen and (max-width:1079px) {
+ .contact--item:nth-child(1) {
+  min-height: 173px!important;
+ }
+ .contact--item:nth-child(2) {
+  margin-top: 10px;
+ }
+}
+@media screen and (max-width:540px) {
+ button[type="submit"] {
+  margin: 30px 15px 30px 15px!important;
+ }
+ input:nth-child(1) {
+  margin-right: 0!important;
+ }
+ input {
+  width: 100%!important;
+ }
+ .contact--item:nth-child(2) {
+  margin-top: 30px!important;
+ }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
