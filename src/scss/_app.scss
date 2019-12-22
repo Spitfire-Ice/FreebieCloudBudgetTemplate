@@ -1,0 +1,50 @@
+.app {
+ width: 100%;
+ min-height: 500px;
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+ flex-wrap: wrap;
+ background: #ED4C5C;
+}
+.app--context {
+ max-width: 455px;
+ margin-right: 61px;
+ h4 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43px;
+  color: #FFFFFF;
+  padding: 0 5px;
+ }
+ p {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: justify;
+  margin: 24px 0 40px 0;
+  color: #FFFFFF;
+  padding: 0 5px;
+ }
+ .appIcons {
+  margin-left: 5px;
+  img {
+   cursor: pointer;
+  }
+  img:nth-child(2) {
+   margin: 0 23px;
+  }
+ }
+}
+.app--slider {
+ max-width: 533px;
+ width: 100%;
+ overflow: hidden;
+}
+@media screen and (max-width:1048px) {
+ .app--context {
+  margin: 100px 30px;
+ }
+}
+
+
